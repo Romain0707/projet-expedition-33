@@ -250,6 +250,7 @@ input[type="submit"] {
     border-bottom: 2px solid #979686;
     color: #979686;
     cursor: pointer;
+    transition: color 1s ease-out;
 }
 
 .card:hover {
@@ -257,6 +258,7 @@ input[type="submit"] {
     bottom: 4px;
     cursor: pointer;
     border-color: #42434B;
+    transition: all 2s ease-out;
 }
 
 input[type="email"]:hover {
