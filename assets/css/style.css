@@ -14,17 +14,8 @@ body {
 }
 
 header {
-    background-color: #0E0F15;
-    height: 6rem;
-}
-
-header nav {
-    background-color: #0e0f1598;
-    top: 0;
-    position: fixed;
-    z-index: 999;
-    height: 6rem;
-    width: 100%;
+    background-color: #0D0F14;
+    height: 5rem;
 }
 
 footer {
@@ -35,6 +26,16 @@ main {
     background-color: #0B0D10;
 }
 
+header nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(6px);
+    height: 5rem;
+}
+
 header nav ul {
     display: flex;
     justify-content: center;
@@ -42,6 +43,13 @@ header nav ul {
     gap: 2rem;
     list-style-type: none;
     padding: 2rem 0;
+}
+
+.nav-bar__animation a:hover {
+    border-bottom: 2px solid #979686;
+    color: #979686;
+    cursor: pointer;
+    transition: color 1s ease-out;
 }
 
 h1 {
@@ -71,11 +79,13 @@ a {
     border-radius: 0.2rem;
     padding: 0.75rem 2rem;
     color: black;
+    transition: bottom 1s, box-shadow 1s ease-out;
+    position: relative;
+    bottom: 0;
 }
 
 .btn:hover {
     box-shadow: 0px 0px 20px 0px #B08B42;
-    position: relative;
     bottom: 1px;
     cursor: pointer;
 }
@@ -141,6 +151,15 @@ a {
     border: 2px solid #262A35;
     background-color: #13151E;
     min-height: 650px;
+    transition: all 0.5s ease-out;
+    position: relative;
+    bottom: 0;
+}
+
+.card:hover {
+    bottom: 4px;
+    cursor: pointer;
+    border-color: #42434B;
 }
 
 .card__image {
@@ -171,7 +190,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     border: 1px solid #262A35;
     background-color: #13151E;
     padding: 2rem;
@@ -195,6 +213,12 @@ input[type="email"] {
     margin: 1rem 0.5rem;
     width: 45%;
     padding: 0 1rem;
+}
+
+input[type="email"]:hover {
+    border-color: #B08B42;
+    box-shadow: 0px 0px 0px 4px #b08b423a;
+    transition: all 1s ease-out;
 }
 
 input[type="submit"] {
@@ -243,29 +267,15 @@ input[type="submit"] {
   height:100%;
 }
 
-
-/* ANIMATIONS */
-
-.nav-bar__animation a:hover {
-    border-bottom: 2px solid #979686;
+.nav-bar__lien a:hover {
     color: #979686;
-    cursor: pointer;
     transition: color 1s ease-out;
 }
 
-.card:hover {
-    position: relative;
-    bottom: 4px;
-    cursor: pointer;
-    border-color: #42434B;
-    transition: all 2s ease-out;
-}
 
-input[type="email"]:hover {
-    border-color: #B08B42;
-    box-shadow: 0px 0px 0px 4px #b08b423a;
-}
+/* ANIMATIONS */
 
-.nav-bar__lien a:hover {
-    color: #979686;
-}
+
+
+
+
