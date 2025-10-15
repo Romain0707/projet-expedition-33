@@ -16,10 +16,14 @@
                 <li><a href="">Précommander</a></li>
             </ul>
         </nav>
-    </header>
+    </header>  
     <main>
         <div class="banner">
-            <img src="assets/img/logo.png" alt="Logo Expedition 33">
+            <div class="banner__background">
+                <div class="banner__logo">
+                    <img src="assets/img/logo.png" alt="Logo Expedition 33">
+                </div>
+            </div>
         </div>
         <div class="description">
             <h1>Brisez le cycle</h1>
@@ -28,40 +32,43 @@
             <a class="btn more-info">En savoir +</a>
         </div>
         <div class="actualite">
-            <div class="card">
-                <div class="card__image">
-                    <img src="assets/img/actualite-1.jpg" alt="">
+            <h2>Actualités</h2>
+            <div class="card--container">
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/img/actualite-1.jpg" alt="">
+                    </div>
+                    <div class="card__description">
+                        <h3>thank you from sandfall interactive!</h3>
+                        <p>To show our appreciation, we've been working on bringing you a few updates</p>
+                    </div>
                 </div>
-                <div class="card__description">
-                    <h3>Thank you from sandfall interactive!</h3>
-                    <p>To show our appreciation, we've been working on bringing you a few updates</p>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/img/actualite-2.jpg" alt="">
+                    </div>
+                    <div class="card__description">
+                        <h3>Patch 1.4.0 is now live!</h3>
+                        <p>We're SUPER excited to bring you the Battle Retry option in this update, which has been one of our most requested QoL additions! We're also thrilled to have added Frame Generation and Low Latency on compatible NVIDIA and Intel GPUs.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card__image">
-                    <img src="assets/img/actualite-2.jpg" alt="">
-                </div>
-                <div class="card__description">
-                    <h3>Patch 1.4.0 is now live!</h3>
-                    <p>We're SUPER excited to bring you the Battle Retry option in this update, which has been one of our most requested QoL additions! We're also thrilled to have added Frame Generation and Low Latency on compatible NVIDIA and Intel GPUs.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__image">
-                    <img src="assets/img/actualite-3.jpg" alt="">
-                </div>
-                <div class="card__description">
-                    <h3>Vynil and CD Sets: Pre-Orders are open!</h3>
-                    <p>We are finally able to open pre-orders for our vinyls and CD Sets</p>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/img/actualite-3.jpg" alt="">
+                    </div>
+                    <div class="card__description">
+                        <h3>Vynil and CD Sets: Pre-Orders are open!</h3>
+                        <p>We are finally able to open pre-orders for our vinyls and CD Sets</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="abonnement">
-            <p>Abonnez-vous à notre newsletter</p>
+            <h2>Abonnez-vous à notre newsletter</h2>
             <form>
                 <input type="email" placeholder="Votre adresse e-mail"">
-                <input type="submit" value="S'abonner">
+                <input type="submit" value="S'abonner" class="btn">
             </form>
         </div>
     </main>
@@ -72,10 +79,10 @@
             </div>
             <nav class="nav-bar__lien">
                 <ul>
-                    <li><a href="">Mentions Légales</a></li>
-                    <li><a href="">Politiques de confidentialité</a></li>
-                    <li><a href="">Préférence cookies</a></li>
-                    <li><a href="">Public ciblé</a></li>
+                    <li class="nav-bar__border"><a href="">Mentions Légales</a></li>
+                    <li class="nav-bar__border"><a href="">Politiques de confidentialité</a></li>
+                    <li class="nav-bar__border"><a href="">Préférence cookies</a></li>
+                    <li class="nav-bar__border"><a href="">Public ciblé</a></li>
                     <li><a href="">Recrutement</a></li>
                 </ul>
             </nav>
