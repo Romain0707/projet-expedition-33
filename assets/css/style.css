@@ -9,10 +9,6 @@
     font-family: "Cinzel", sans-serif;
 }
 
-body {
-    width: 100%;
-}
-
 header {
     background-color: #0D0F14;
     height: 5rem;
@@ -107,11 +103,11 @@ a {
     align-items: center;
     height: 100%;
 
-}
+    & img {
+        display: block;  
+        height: 60%;
+    }
 
-.banner__logo img {
-    display: block;  
-    height: 60%;
 }
 
 /* DESCRIPTION */
@@ -121,12 +117,12 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
 
-.description p {
-    max-width: 50%;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    & p {
+        max-width: 50%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
 }
 
 /* ACTUALITES */
@@ -143,7 +139,6 @@ a {
     gap: 3rem;
     margin-bottom: 4rem;
 }
-
 
 .card {
     border-radius: 1rem;
@@ -165,21 +160,20 @@ a {
 
 .card__image {
     width: 100%;
-}
 
-.card__image img {
-    object-fit: contain;
-    width: 100%;
+    & img {
+        object-fit: contain;
+        width: 100%;
+    }
 }
 
 .card__description {
-    padding: 0rem 1rem;
-}
+    padding: 0rem 1rem 1rem;
 
-.card__description h3 {
-    margin: 1.5rem 0rem;
+    & h3 {
+        margin: 1.5rem 0rem;
+    }
 }
-
 
 /* Abonnement */
 
@@ -190,10 +184,10 @@ a {
     border: 1px solid #262A35;
     background-color: #13151E;
     padding: 2rem;
-}
 
-.abonnement h2 {
-    font-weight: 500;
+    & h2 {
+        font-weight: 500;
+    }
 }
 
 form {
@@ -210,12 +204,18 @@ input[type="email"] {
     margin: 1rem 0.5rem;
     width: 45%;
     padding: 0 1rem;
+    transition: border-color 1s, box-shadow 1s ease-out;
 }
 
 input[type="email"]:hover {
     border-color: #B08B42;
     box-shadow: 0px 0px 0px 4px #b08b423a;
-    transition: all 1s ease-out;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: #B08B42;   
+    box-shadow: 0px 0px 0px 4px #b08b423a;
 }
 
 input[type="submit"] {
