@@ -73,13 +73,20 @@ a {
     color: black;
 }
 
+.btn:hover {
+    box-shadow: 0px 0px 20px 0px #B08B42;
+    position: relative;
+    bottom: 1px;
+    cursor: pointer;
+}
+
 /* BANNIERE */
 
 .banner {
     height: 400px;
 }
 .banner__background {
-    background: center/cover no-repeat url(../img/banner.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,center/cover no-repeat url(../img/banner.jpg);
     height: 400px;
 }
 
@@ -131,7 +138,7 @@ a {
     border-radius: 1rem;
     width: 20%;
     overflow: hidden;
-    border: 1px solid #262A35;
+    border: 2px solid #262A35;
     background-color: #13151E;
     min-height: 650px;
 }
@@ -234,4 +241,29 @@ input[type="submit"] {
   right:-1rem; 
   top:0; 
   height:100%;
+}
+
+
+/* ANIMATIONS */
+
+.nav-bar__animation a:hover {
+    border-bottom: 2px solid #979686;
+    color: #979686;
+    cursor: pointer;
+}
+
+.card:hover {
+    position: relative;
+    bottom: 4px;
+    cursor: pointer;
+    border-color: #42434B;
+}
+
+input[type="email"]:hover {
+    border-color: #B08B42;
+    box-shadow: 0px 0px 0px 4px #b08b423a;
+}
+
+.nav-bar__lien a:hover {
+    color: #979686;
 }
