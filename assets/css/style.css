@@ -46,6 +46,7 @@ header nav ul {
 }
 
 .nav-bar__animation a:hover {
+    padding-bottom: 0.2rem;
     border-bottom: 2px solid #979686;
     color: #979686;
     cursor: pointer;
@@ -150,7 +151,7 @@ a {
     overflow: hidden;
     border: 2px solid #262A35;
     background-color: #13151E;
-    min-height: 650px;
+    min-height: 500px;
     transition: all 0.5s ease-out;
     position: relative;
     bottom: 0;
@@ -176,13 +177,9 @@ a {
 }
 
 .card__description h3 {
-    font-size: 1.5rem;
     margin: 1.5rem 0rem;
 }
 
-.card__description p {
-    font-size: 1.2rem;
-}
 
 /* Abonnement */
 
@@ -252,11 +249,16 @@ input[type="submit"] {
     align-items: center;
 }
 
+.nav-bar a {
+    font-size: 0.8rem;
+}
+
 .nav-bar__border{
   display:inline-block; 
   padding:0 7px; 
   position:relative;
 }
+
 .nav-bar__border:not(:last-child)::after{
   content:""; 
   border:1px solid #161A22;
@@ -271,11 +273,4 @@ input[type="submit"] {
     color: #979686;
     transition: color 1s ease-out;
 }
-
-
-/* ANIMATIONS */
-
-
-
-
 
