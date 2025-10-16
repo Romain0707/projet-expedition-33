@@ -11,7 +11,7 @@
 
 header {
     background-color: #0D0F14;
-    height: 5rem;
+    height: 10vh;
 }
 
 footer {
@@ -24,12 +24,14 @@ main {
 
 header nav {
     background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    display: flex;
+    justify-content: center;
     position: fixed;
-    width: 100%;
+    min-width: 100%;
     top: 0;
     z-index: 999;
     backdrop-filter: blur(6px);
-    height: 5rem;
+    height: 10vh;
 }
 
 header nav ul {
@@ -274,3 +276,41 @@ input[type="submit"] {
     transition: color 1s ease-out;
 }
 
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header {
+        height: 30vh;
+    }
+
+    header nav {
+        height: 30vh;
+        justify-content: center;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    .card--container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+    }
+    
+    .card {
+        width: 50%;
+    }
+
+    footer {
+        height: 15vh;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
